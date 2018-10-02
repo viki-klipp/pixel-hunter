@@ -1,5 +1,6 @@
-import game1 from './game1';
 import * as utils from '../utils';
+import game1 from './game1';
+import {initialState} from '../data';
 
 const html = `<div class="rules">
   <h1 class="rules__title">Правила</h1>
@@ -27,7 +28,7 @@ userNameField.addEventListener(`input`, function () {
 });
 
 btn.addEventListener(`click`, () => {
-  utils.showScreen(game1, true);
+  utils.showScreen(game1(initialState), true);
 });
 
 export default element;

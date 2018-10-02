@@ -8,6 +8,14 @@ const html = `<div class="header__back">
   </span>
   </div>`;
 
+/*
+const timerHtml = `<h1 class="game__timer">NN</h1>`;
+const livesHtml = `<div class="game__lives">
+      <img src="img/heart__empty.svg" class="game__heart" alt="Life" width="32" height="32">
+      <img src="img/heart__full.svg" class="game__heart" alt="Life" width="32" height="32">
+      <img src="img/heart__full.svg" class="game__heart" alt="Life" width="32" height="32">
+    </div>`;*/
+
 const element = document.createElement(`header`);
 element.classList.add(`header`);
 element.innerHTML = html;
@@ -19,5 +27,5 @@ btn.addEventListener(`click`, () => {
   utils.showScreen(intro);
 });
 
-export const getHeader = () => element;
+export const renderHeader = () => element;
 
