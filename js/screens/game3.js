@@ -1,5 +1,5 @@
 import * as utils from '../utils';
-import {levels} from '../data';
+import {levels} from '../data/data';
 import renderStats from '../stats';
 import getOption from '../game-option';
 import statsScreen from './stats';

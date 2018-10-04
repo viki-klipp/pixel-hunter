@@ -1,6 +1,6 @@
 import * as utils from '../utils';
 import game1 from './game1';
-import {initialState} from '../data';
+import {initialState} from '../data/data';
 
 const html = `<div class="rules">
   <h1 class="rules__title">Правила</h1>

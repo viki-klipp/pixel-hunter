@@ -1,11 +1,11 @@
-import {statsResultList} from './data';
+import {statsResultList} from './data/data';
 
-export default (resultList = []) => {
-  const html = `<div class="stats">
-    <ul class="stats">
-      ${resultList.map((el) => `<li class="stats__result ${statsResultList[el]}"></li>`)}
-    </ul>
+export default (resultsList = []) => {
+  const stats = `<div class="stats">
+      <ul class="stats">
+        ${resultsList.map((item) => `<li class="stats__result ${statsResultList[item]}"></li>`)}
+      </ul>
     </div>`;
 
-  return html;
+  return stats;
 };

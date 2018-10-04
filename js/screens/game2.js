@@ -2,7 +2,7 @@ import * as utils from '../utils';
 import game3 from './game3';
 import renderStats from '../stats';
 import getOption from '../game-option';
-import {levels} from '../data';
+import {levels} from '../data/data';
 import {changeGameScreen} from '../change-screen';
 
 export default (state) => {
